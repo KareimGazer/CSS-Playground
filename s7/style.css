@@ -1,0 +1,104 @@
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* inspired by */
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* https: //www.joshwcomeau.com/css/custom-css-reset/ */
+/* Kevin Powell CSS reset */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* set up the body */
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.6;
+
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+
+    min-height: 100vh;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+em {
+    text-decoration:underline;
+}
+
+.frame {
+    padding: 32px;
+    background-color: bisque;
+    
+    margin: auto;
+    /* margin-top: 32px; */
+    /* width: 50%; */
+    max-width: 400px;
+    transition: all 0.5s ease;
+}
+
+.frame:hover {
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+    box-shadow: var(--bs);
+    transform: scale(1.05);
+}
+
+nav {
+    margin-bottom: 48px;
+}
+
+ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    padding-inline: 32px
+}
+
+h2 {
+    display: inline-block;
+}
+
+main {
+    display: flex;
+    padding: 16px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.higlight {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: yellow;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-inline: 8px;
+}
